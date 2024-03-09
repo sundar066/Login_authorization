@@ -3,4 +3,4 @@
 /server/node_modules
 /server/.env
 
-vercel.json
+/vercel.json
