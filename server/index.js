@@ -11,7 +11,13 @@ connection();
 
 // middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+    origin: {"https://login-authorization-server.vercel.app/"},
+    methods: {"POST", "GET", "DELETE", "PUT"},
+    credentials: true
+  }
+));
 
 // routes
 app.use("/api/users", userRoutes);
