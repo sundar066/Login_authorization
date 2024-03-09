@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cors(
     {
     origin: "https://login-authorization-server.vercel.app/",
-    methods: ["GET", "POST", "PATCH", "DELETE"],
+    methods: ["GET", "POST", "PATCH", "DELETE","PUT","DELETE"],
     credentials: true
   }
 ));
